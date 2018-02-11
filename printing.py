@@ -32,14 +32,14 @@ while True:
 
     elif menu_select == '4':
         try:
-            print('Answer: ' + str(count_by_genre(input('Please enter the name of the file: ')), input('Please enter a genre: ')) + '\n')
+            print('Answer: ' + str(count_by_genre(input('Please enter the name of the file: '), input('Please enter a genre: '))) + '\n')
         except FileNotFoundError:
             print('\nPlease enter a correct file name.\n')
             continue
 
     elif menu_select == '5':
         try:
-            print('Answer: ' + str(get_line_number_by_title(input('Please enter the name of the file: ')), input('Please enter game title: ')) + '\n')
+            print('Answer: ' + str(get_line_number_by_title(input('Please enter the name of the file: '), input('Please enter game title: '))) + '\n')
         except FileNotFoundError:
             print('\nPlease enter a correct file name.\n')
             continue
