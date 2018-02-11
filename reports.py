@@ -61,7 +61,6 @@ def get_line_number_by_title(file_name, title):
             count += 1
             continue
         else:
-            print(count)
             return count
             break
 
